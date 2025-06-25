@@ -24,10 +24,33 @@
       border-radius: 16px;
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
     }
-    h1 {
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .header-text {
+      flex: 1 1 60%;
+    }
+    .header-text h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
       color: #111827;
+    }
+    .header-text p {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .profile-pic {
+      flex: 1 1 35%;
+      max-width: 150px;
+    }
+    .profile-pic img {
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     h2 {
       color: #1f2937;
@@ -71,8 +94,15 @@
 <body>
 
   <div class="container">
-    <h1>Vaishali Gupta</h1>
-    <p><strong>Freelance Backend Engineer | Java | Apache Camel | Spring Boot</strong></p>
+    <div class="header">
+      <div class="header-text">
+        <h1>Vaishali Gupta</h1>
+        <p>Freelance Backend Engineer | Java | Apache Camel | Spring Boot</p>
+      </div>
+      <div class="profile-pic">
+        <img src="profile_pic.png" alt="Vaishali Gupta Photo" />
+      </div>
+    </div>
 
     <div class="section">
       <h2>About Me</h2>
@@ -145,4 +175,3 @@
 
 </body>
 </html>
-
